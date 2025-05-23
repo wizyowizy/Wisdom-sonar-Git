@@ -6,5 +6,5 @@ variable "my_ip" {
 
 variable "region" {
    description = "Define the region where AWS service is provisioned"
-   default = "us-east-2"
+   default = "us-east-1"
    }

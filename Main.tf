@@ -157,7 +157,7 @@ resource "aws_instance" "firstinstance" {
   instance_type          = "t2.large"
   vpc_security_group_ids = [aws_security_group.allow_web.id]
   subnet_id              = aws_subnet.prodsubnet1.id
-  key_name               = "wiseKP"
+  key_name               = "wizyKP"
   availability_zone      = "us-east-1a"
   user_data              =  "${file("install_jenkins.sh")}"
 
@@ -173,7 +173,7 @@ resource "aws_instance" "secondinstance" {
   instance_type          = "t2.micro"
   vpc_security_group_ids = [aws_security_group.allow_web.id]
   subnet_id              = aws_subnet.prodsubnet1.id
-  key_name               = "wiseKP"
+  key_name               = "wizyKP"
   availability_zone      = "us-east-1a"
   user_data              =  "${file("install_tomcat.sh")}"
   
@@ -189,7 +189,7 @@ resource "aws_instance" "thirdinstance" {
   instance_type          = "t3.xlarge"
   vpc_security_group_ids = [aws_security_group.allow_web.id]
   subnet_id              = aws_subnet.prodsubnet1.id
-  key_name               = "wiseKP"
+  key_name               = "wizyKP"
   availability_zone      = "us-east-1a"
   user_data              =  "${file("install_sonarqube.sh")}"
   
@@ -205,7 +205,7 @@ resource "aws_instance" "fourthinstance" {
   instance_type          = "t3.xlarge"
   vpc_security_group_ids = [aws_security_group.allow_web.id]
   subnet_id              = aws_subnet.prodsubnet1.id
-  key_name               = "wiseKP"
+  key_name               = "wizyKP"
   availability_zone      = "us-east-1a"
   user_data              =  "${file("install_nexus.sh")}"
   

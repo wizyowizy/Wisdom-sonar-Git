@@ -191,7 +191,7 @@ resource "aws_instance" "thirdinstance" {
   subnet_id              = aws_subnet.prodsubnet1.id
   key_name               = "wiseKP"
   availability_zone      = "us-east-1a"
-  user_data              =  "${file("install_sonar.sh")}"
+  user_data              =  "${file("install_sonarqube.sh")}"
   
 
 
